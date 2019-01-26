@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroung">
+
+    <TextView
+        android:id="@+id/question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="Question 1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="How satisfied are you about Room services Cleanliness in general?"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_number" />
+
+    <ImageView
+        android:id="@+id/fair_img"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:src="@drawable/ic_confused_grey"
+        app:layout_constraintBottom_toTopOf="@id/fair"
+        app:layout_constraintEnd_toEndOf="@id/fair"
+        app:layout_constraintStart_toStartOf="@id/fair" />
+
+    <TextView
+        android:id="@+id/fair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:text="Fair"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question" />
+
+    <TextView
+        android:id="@+id/bad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bad"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="@id/fair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fair" />
+
+    <ImageView
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/bad_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:src="@drawable/ic_sad_grey"
+        app:layout_constraintBottom_toTopOf="@id/bad"
+        app:layout_constraintEnd_toEndOf="@id/bad"
+        app:layout_constraintStart_toStartOf="@id/bad" />
+
+    <TextView
+        android:id="@+id/good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fair" />
+
+    <ImageView
+        android:id="@+id/good_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:src="@drawable/ic_smiling_grey"
+        app:layout_constraintBottom_toTopOf="@id/good"
+        app:layout_constraintEnd_toEndOf="@id/good"
+        app:layout_constraintStart_toStartOf="@id/good"
+        android:padding="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/weak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weak"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fair" />
+
+    <ImageView
+        android:id="@+id/weak_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:src="@drawable/ic_angry_grey"
+        app:layout_constraintBottom_toTopOf="@id/weak"
+        app:layout_constraintEnd_toEndOf="@id/weak"
+        app:layout_constraintStart_toStartOf="@id/weak"
+        android:padding="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/excelent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excelent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fair" />
+
+    <ImageView
+        android:id="@+id/excelent_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:src="@drawable/ic_happy"
+        app:layout_constraintBottom_toTopOf="@id/excelent"
+        app:layout_constraintEnd_toEndOf="@id/excelent"
+        app:layout_constraintStart_toStartOf="@id/excelent"
+        android:padding="@dimen/_5sdp"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/fair" />
+
+    <TextView
+        android:id="@+id/next_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1" />
+
+</android.support.constraint.ConstraintLayout>

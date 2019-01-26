@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_275sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroung"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_complaint"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_8sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/involved_person_tv"
+        android:text="@string/involved_person"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        app:layout_constraintStart_toStartOf="@id/heading"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <Spinner
+        android:id="@+id/involved_person_spn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/involved_person_tv"
+        app:layout_constraintStart_toStartOf="@id/involved_person_tv"
+        app:layout_constraintEnd_toEndOf="@id/involved_person_tv"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_tv"
+        android:text="@string/name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toTopOf="@id/involved_person_tv"
+        app:layout_constraintStart_toEndOf="@id/involved_person_tv"
+        android:layout_marginStart="@dimen/_16sdp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_et"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/name_tv"
+        app:layout_constraintStart_toStartOf="@id/name_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:focusableInTouchMode="true"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/category_tv"
+        android:text="@string/category"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/involved_person_spn"
+        app:layout_constraintStart_toStartOf="@id/involved_person_spn"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <Spinner
+        android:id="@+id/category_spn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/category_tv"
+        app:layout_constraintStart_toStartOf="@id/involved_person_tv"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub_category_tv"
+        android:text="@string/sub_category"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toTopOf="@id/category_tv"
+        app:layout_constraintStart_toEndOf="@id/category_spn"
+        android:layout_marginStart="@dimen/_16sdp"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub_category_spn"
+        app:layout_constraintTop_toBottomOf="@id/sub_category_tv"
+        app:layout_constraintStart_toStartOf="@id/sub_category_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:focusableInTouchMode="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/complaint_type_tv"
+        android:text="@string/complaint_type"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/category_spn"
+        app:layout_constraintStart_toStartOf="@id/category_spn"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <Spinner
+        android:id="@+id/complaint_type_spn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/complaint_type_tv"
+        app:layout_constraintStart_toStartOf="@id/complaint_type_tv"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_tv"
+        android:text="@string/details"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/complaint_type_spn"
+        app:layout_constraintStart_toStartOf="@id/complaint_type_spn"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <EditText
+        android:id="@+id/details_et"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/details_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/_8sdp"
+        android:focusableInTouchMode="true"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@id/details_et"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@id/status_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@id/status_tv"
+        app:layout_constraintEnd_toStartOf="@id/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.midok.drbakhsh.View.ActivityProfile"
+    android:background="@color/backgroung"
+    android:focusableInTouchMode="true">
+
+    <View
+        android:id="@+id/center_line"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include layout="@layout/toolbar"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_profile"
+        android:text="@string/my_profile"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name_in_english_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textColor"
+        android:layout_marginTop="@dimen/_26sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_profile">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/name_in_english_et"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:hint="@string/name_in_english"
+            android:inputType="text"
+            android:layout_margin="@dimen/_8sdp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name_in_arabic_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textColor"
+        android:layout_marginTop="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_in_english_layout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/name_in_arabic_et"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:hint="@string/name_in_arabic"
+            android:inputType="text"
+            android:focusableInTouchMode="true"
+            android:layout_margin="@dimen/_8sdp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/id_no_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textColor"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_in_arabic_layout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/id_no_et"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:hint="@string/id_no"
+            android:inputType="number"
+            android:focusableInTouchMode="true"
+            android:layout_margin="@dimen/_8sdp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/medical_file_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textColor"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_no_layout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/medical_file_et"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:hint="@string/medical_file_no"
+            android:inputType="number"
+            android:focusableInTouchMode="true"
+            android:layout_margin="@dimen/_8sdp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mobile_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textColor"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/medical_file_layout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/mobile_et"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:hint="@string/mobile_number"
+            android:inputType="number"
+            android:focusableInTouchMode="true"
+            android:layout_margin="@dimen/_8sdp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/mobile_layout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email_et"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:focusableInTouchMode="true"
+            android:layout_margin="@dimen/_8sdp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/registration_date_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/email_layout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/registration_date_et"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:hint="@string/registration_date"
+            android:inputType="textEmailAddress"
+            android:focusableInTouchMode="true"
+            android:layout_margin="@dimen/_8sdp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:text="@string/save"
+        fancy:fb_textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/registration_date_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/center_line"
+        android:backgroundTint="@color/buttonColor"
+        fancy:fb_radius="@dimen/_16sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_8sdp"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/change_password"
+        android:text="@string/change_password"
+        app:layout_constraintTop_toBottomOf="@id/registration_date_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/center_line"
+        android:backgroundTint="@color/buttonColor"
+        fancy:fb_radius= "@dimen/_16sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_8sdp"
+        fancy:fb_textSize="@dimen/_14sdp"/>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_275sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroung"
+    android:padding="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_a_doctor"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/select_doctor"/>
+
+    <TextView
+        android:id="@+id/doctor_speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doctor_speciality"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toBottomOf="@id/select_doctor"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/doctor_speciality"
+        app:layout_constraintTop_toTopOf="@id/doctor_speciality"
+        app:layout_constraintBottom_toBottomOf="@id/doctor_speciality"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:id="@+id/doctor_speciality_spn"/>
+
+    <TextView
+        android:id="@+id/doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doctor_name"
+        app:layout_constraintTop_toBottomOf="@id/doctor_speciality"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textSize="@dimen/_12ssp"/>
+
+    <Spinner
+        android:id="@+id/doctor_name_spn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/doctor_speciality_spn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/doctor_name"
+        app:layout_constraintBottom_toBottomOf="@id/doctor_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_from"
+        app:layout_constraintTop_toBottomOf="@id/doctor_name"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/date_from"
+        android:textSize="@dimen/_12ssp"/>
+
+    <EditText
+        android:id="@+id/date_from_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/doctor_speciality_spn"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/date_from"
+        app:layout_constraintBottom_toBottomOf="@id/date_from"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        app:layout_constraintTop_toBottomOf="@id/date_from"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hr"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/hr"
+        app:layout_constraintTop_toTopOf="@id/time"
+        app:layout_constraintStart_toStartOf="@id/date_from_et"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/hr"
+        app:layout_constraintBottom_toBottomOf="@id/hr"
+        app:layout_constraintStart_toEndOf="@id/hr"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:id="@+id/hr_spn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/min"
+        app:layout_constraintTop_toTopOf="@id/time"
+        app:layout_constraintStart_toEndOf="@id/hr_spn"
+        android:layout_marginStart="@dimen/_3sdp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/hr"
+        app:layout_constraintBottom_toBottomOf="@id/hr"
+        app:layout_constraintStart_toEndOf="@id/min"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:id="@+id/min_spn"/>
+
+    <TextView
+        android:id="@+id/status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/time"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/textColor"
+        android:id="@+id/check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/status_tv"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:padding="@dimen/_8sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:id="@+id/cancel"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/status_tv"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintEnd_toStartOf="@id/check" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">Dr. Bakhsh</string>
+    <string name="email_or">Email or File No. or ID No</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="dont_have_an_account">Dont have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="file_number">File Number</string>
+    <string name="id_number">ID Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="welcome_to_patient_portal">Welcome to patient portal</string>
+    <string name="welcome_to_dr_bakhsh">Welcome to Dr. Bakhsh Patient Portal, hoping it meets all your needs and requirements.Browsing the portal is easy as we provide most functions to strengthen the relationship with our dear customers.</string>
+    <string name="appointment">Appointment</string>
+    <string name="lab_results">Lab results</string>
+    <string name="radiology">Radiology</string>
+    <string name="medication">Medication</string>
+    <string name="survey">Survey</string>
+    <string name="complaints">Complaints</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_a_doctor">Select A Doctor</string>
+    <string name="doctor_speciality">Doctor speciality</string>
+    <string name="doctor_name">Doctor name</string>
+    <string name="date_from">Date</string>
+    <string name="date_to">Date to</string>
+    <string name="time">Time</string>
+    <string name="hr">Hr.</string>
+    <string name="min">Min</string>
+    <string name="check">Check</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_date">please enter your desired date</string>
+    <string name="choose_option">Please choose an option</string>
+    <string name="general_comments">General comments</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_comments_here">Enter your comments here!</string>
+    <string name="new_complaint">New complaint</string>
+    <string name="involved_person">Involved person</string>
+    <string name="name">Name</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub category</string>
+    <string name="complaint_type">Complaint type</string>
+    <string name="details">Details</string>
+    <string name="complain_on_name_error">Please enter the person you want to complaint on name</string>
+    <string name="send_message">Send Message</string>
+    <string name="enter_message">Enter your message here!</string>
+    <string name="send">Send</string>
+    <string name="arabic">عربي</string>
+    <string name="logout">Logout</string>
+    <string name="my_profile">My profile</string>
+    <string name="name_in_english">Name in english</string>
+    <string name="name_in_arabic">Name in arabic</string>
+    <string name="id_no">ID number</string>
+    <string name="medical_file_no">Medical file number</string>
+    <string name="email">Email</string>
+    <string name="save">Save</string>
+    <string name="change_password">Change password</string>
+    <string name="registration_date">Registration date</string>
+
+    <string-array name="specialities">
+        <item>ALL</item>
+        <item>ANAESTHESIA MANAGMENT</item>
+        <item>AUDIOMETRY</item>
+        <item>CARDIOLOGY</item>
+        <item>WOMEN AND PREGNANCY</item>
+    </string-array>
+
+    <string-array name="doctor_names">
+        <item>AHMED YAHYA</item>
+        <item>LUTFI FAISAL SHARYAN SAEED</item>
+        <item>GHAZI DAMANHURY</item>
+        <item>EHSAN YAHYA YOUSEF SABRI</item>
+        <item>AHMED ALKAWAS</item>
+        <item>GEHAN MOHAMMED SHAFEEK</item>
+        <item>ABDULRAHMAN NABIL ABUKHATER</item>
+    </string-array>
+
+    <string-array name="anaesthesia">
+        <item>GHAZI DAMANHURY</item>
+        <item>EHSAN YAHYA YOUSEF SABRI</item>
+        <item>AHMED ALKAWAS</item>
+    </string-array>
+
+    <string-array name="audiometry">
+        <item>GEHAN MOHAMMED SHAFEEK</item>
+    </string-array>
+
+    <string-array name="cardiology">
+        <item>AHMED YAHYA</item>
+        <item>LUTFI FAISAL SHARYAN SAEED</item>
+    </string-array>
+
+    <string-array name="women">
+        <item>ABDULRAHMAN NABIL ABUKHATER</item>
+    </string-array>
+
+    <string-array name="survey_questions">
+        <item>How satisfied are you about Room services &amp; Cleanliness in general?</item>
+        <item>How satisfied are you about Food services in general?</item>
+        <item>Did you receive Privacy &amp; Respect in admission office &amp; Emergency department?</item>
+        <item>How much time was taken until admission procedures were finished /completed?</item>
+        <item>Did you face any problem in Discharge Procedure?</item>
+    </string-array>
+
+    <string-array name="involved_person">
+        <item>Doctor</item>
+        <item>Nurse</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Final bill</item>
+        <item>Cashier</item>
+        <item>Booking</item>
+        <item>Doctor</item>
+        <item>Lab reports</item>
+        <item>Medical care</item>
+        <item>Delay</item>
+        <item>Attitude</item>
+        <item>Improper managment</item>
+        <item>Overpricing</item>
+        <item>Wrong bill</item>
+        <item>Nursing stuff</item>
+        <item>Hospital services</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="sub_category">
+        <item>Reception</item>
+        <item>Physician</item>
+        <item>Insurance</item>
+        <item>Pharmacy</item>
+        <item>Laboratory</item>
+        <item>Radiology</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="complaint_type">
+        <item>Appointment</item>
+        <item>Procedure</item>
+        <item>Treatment</item>
+        <item>Billing</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>
